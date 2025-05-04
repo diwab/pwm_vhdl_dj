@@ -1,0 +1,20 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Run VHDL Simulation (ModelSim)",
+      "type": "shell",
+      "command": "vsim -c -do \"vlib work; vmap work work; vcom src/pwm_generator.vhd; vcom sim/tb_pwm.vhd; vsim work.tb_pwm; add wave *; run 2ms; quit\"",
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "panel": "shared"
+      },
+      "problemMatcher": []
+    }
+  ]
+}

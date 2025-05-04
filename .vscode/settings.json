@@ -1,0 +1,8 @@
+{
+    "files.associations": {
+      "*.vhd": "vhdl",
+      "*.vhdl": "vhdl"
+    },
+    "editor.tabSize": 2
+  }
+  
